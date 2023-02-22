@@ -14,7 +14,7 @@ class Controller extends StatelessWidget {
         valueListenable: themeNotifier,
         builder: (_, mode, __) {
           return MaterialApp(
-            theme: ThemeData(primarySwatch: Colors.amber),
+            theme: ThemeData(),
             darkTheme: ThemeData.dark(), // standard dark theme
             themeMode: mode,
             title: "PetZone App",
@@ -41,6 +41,9 @@ class Controller extends StatelessWidget {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content: Text('Icon Button Clicked'),
+                            elevation: 10,
+                            behavior: SnackBarBehavior.floating,
+                            backgroundColor: Colors.green,
                           ),
                         );
                       },
