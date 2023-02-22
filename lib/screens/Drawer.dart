@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
-import 'package:flutter_sam/Controller.dart';
 import 'package:flutter_sam/screens/AboutUsPage.dart';
 import 'package:flutter_sam/screens/ProfilePage.dart';
 import 'package:flutter_sam/screens/Notifications.dart';
@@ -83,13 +82,6 @@ class _DrawerOnlyState extends State<DrawerOnly> {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const AboutUs()));
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.perm_contact_cal_outlined),
-            title: const Text('Toggle Dark Mode'),
-            onTap: () {
-              Navigator.pop(context);
             },
           ),
           ListTile(
